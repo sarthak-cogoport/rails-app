@@ -19,7 +19,7 @@ class MovieController < ApplicationController
     end
     def getAll
         for m in params[:data]
-            newMovie = Movie.new(Title:m[:Title], Year:m[:Year],Released:m[:Released],Poster:m[:Poster],Plot:m[:Plot],imdbRating:m[:imdbRating])
+            newMovie = Movie.new(Title:m[:Title], Year:m[:Year],Released:m[:Released],Poster:m[:Poster],Plot:m[:Plot],imdbRating:m[:imdbRating],imdbID:m[:imdbID])
             newMovie.save()
         end
         render html:"added all movies"

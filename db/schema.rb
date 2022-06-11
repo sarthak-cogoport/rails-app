@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_08_071200) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_08_164956) do
   create_table "movies", force: :cascade do |t|
     t.string "Title"
     t.string "Year"
@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_08_071200) do
     t.float "imdbRating"
     t.datetime "created_at", precision: nil
     t.datetime "updated_at", precision: nil
+    t.string "imdbID"
   end
 
   create_table "tasks", force: :cascade do |t|
